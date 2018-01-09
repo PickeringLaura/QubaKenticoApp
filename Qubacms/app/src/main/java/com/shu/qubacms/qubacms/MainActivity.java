@@ -1,6 +1,7 @@
 package com.shu.qubacms.qubacms;
 
 import android.os.Bundle;
+import android.widget.Button;
 import android.widget.TextView;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -10,7 +11,7 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.content.Intent;
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     // Used to load the 'native-lib' library on application startup.
     static {
@@ -21,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         /*
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -37,6 +39,9 @@ public class MainActivity extends AppCompatActivity {
         // Example of a call to a native method
         TextView tv = (TextView) findViewById(R.id.sample_text);
         tv.setText(stringFromJNI());*/
+
+        Button button = (Button) findViewById(R.id.Login);
+        button.setOnClickListener(this);
     }
 
     @Override
@@ -72,4 +77,23 @@ public class MainActivity extends AppCompatActivity {
      * which is packaged with this application.
      */
     public native String stringFromJNI();
+
+    @Override
+    public void onClick(View view) {
+
+        if (isLoginButton(view)) {
+            goToDashboard();
+        }
+
+    }
+
+    private boolean isLoginButton(View view) {
+        return view == findViewById(R.id.Login);
+    }
+
+    private void goToDashboard() {
+        Intent intent = new Intent(MainActivity.this, Dashboard.class);
+        startActivity(intent);
+    }
+
 }
