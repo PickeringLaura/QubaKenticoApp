@@ -8,52 +8,67 @@
     tools:context="com.shu.qubacms.qubacms.User_Dashboard"
     tools:showIn="@layout/activity_user__dashboard">
 
-    <TextView
-        android:id="@+id/UserDashboard"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/text_view_user_dashboard"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
-        tools:layout_editor_absoluteX="33dp"
-        tools:layout_editor_absoluteY="68dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="426dp"
+        android:layout_marginBottom="51dp"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-    <Button
-        android:id="@+id/EditPages"
-        android:layout_width="142dp"
-        android:layout_height="wrap_content"
-        android:text="@string/button_name_editpages"
-        tools:layout_editor_absoluteX="33dp"
-        tools:layout_editor_absoluteY="154dp" />
+        <TextView
+            android:id="@+id/UserDashboard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text_view_user_dashboard"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+            tools:layout_editor_absoluteX="33dp"
+            tools:layout_editor_absoluteY="68dp" />
 
-    <Button
-        android:id="@+id/LogOut"
-        android:layout_width="214dp"
-        android:layout_height="wrap_content"
-        android:text="@string/button_name_logout"
-        tools:layout_editor_absoluteX="85dp"
-        tools:layout_editor_absoluteY="323dp" />
+        <Button
+            android:id="@+id/ManageImages"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_name_manageimages"
+            tools:layout_editor_absoluteX="210dp"
+            tools:layout_editor_absoluteY="154dp" />
 
-    <Button
-        android:id="@+id/addtionalFunctions"
-        android:layout_width="142dp"
-        android:layout_height="wrap_content"
-        android:text="@string/button_name_additionalfunctions"
-        tools:layout_editor_absoluteX="210dp"
-        tools:layout_editor_absoluteY="239dp" />
+        <Button
+            android:id="@+id/contactformresponses"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_name_contactformresponses"
+            tools:layout_editor_absoluteX="33dp"
+            tools:layout_editor_absoluteY="239dp" />
 
-    <Button
-        android:id="@+id/contactformresponses"
-        android:layout_width="142dp"
-        android:layout_height="wrap_content"
-        android:text="@string/button_name_contactformresponses"
-        tools:layout_editor_absoluteX="33dp"
-        tools:layout_editor_absoluteY="239dp" />
+        <Button
+            android:id="@+id/addtionalFunctions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_name_additionalfunctions"
+            tools:layout_editor_absoluteX="210dp"
+            tools:layout_editor_absoluteY="239dp" />
 
-    <Button
-        android:id="@+id/button18"
-        android:layout_width="142dp"
-        android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="210dp"
-        tools:layout_editor_absoluteY="154dp" />
+        <Button
+            android:id="@+id/EditPages"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_name_editpages"
+            tools:layout_editor_absoluteX="33dp"
+            tools:layout_editor_absoluteY="154dp" />
+
+        <Button
+            android:id="@+id/LogOut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_name_logout"
+            tools:layout_editor_absoluteX="85dp"
+            tools:layout_editor_absoluteY="323dp" />
+
+    </LinearLayout>
+
 </android.support.constraint.ConstraintLayout>

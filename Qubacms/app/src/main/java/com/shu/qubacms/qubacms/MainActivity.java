@@ -81,18 +81,27 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View view) {
 
-        if (isLoginButton(view)) {
+        if (isLoginButton(view))
+        {
             goToDashboard();
         }
-
+        else if (isExitButton(view))
+        {
+            System.exit(0);
+        }
     }
 
     private boolean isLoginButton(View view) {
         return view == findViewById(R.id.Login);
     }
 
+    private boolean isExitButton(View view)
+    {
+        return view == findViewById(R.id.LogOut);
+    }
+
     private void goToDashboard() {
-        Intent intent = new Intent(MainActivity.this, Dashboard.class);
+        Intent intent = new Intent(MainActivity.this, User_Dashboard.class);
         startActivity(intent);
     }
 
