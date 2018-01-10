@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Qubacms</string>
+    <string name="action_settings">Settings</string>
+
+    //login page content main
+    <string name="text_view_main_User_Name"> User Name</string>
+    <string name="text_view_main_Password"> Password</string>
+    <string name="button_name_main_Login_Button">Login</string>
+    <string name="button_name_main_Cancel_Button">Create Account</string>
+
+    <string name="text_view_main_trouble_logging_in"> Having Trouble Logging In?</string>
+    <string name="button_name_main_Contact_us_Button">Contact Us</string>
+
+    //login page activity main
+    <string name="text_view_main_Qubapp"> QUBA-APP</string>
+    <string name="title_activity_user_dashboard">UserDashboard</string>
+    <string name="title_activity_user__dashboard">User_Dashboard</string>
+
+    //user dashboard activity
+    <string name="text_view_welcome">Welcome!</string>
+
+    //user dashboard content
+    <string name="text_view_user_dashboard">User Dashboard</string>
+    <string name="button_name_editpages">Edit Pages</string>
+    <string name="button_name_manageimages">Manage Images</string>
+    <string name="button_name_contactformresponses">Contact Form Responses</string>
+    <string name="button_name_additionalfunctions">Additional Functions</string>
+    <string name="button_name_logout">Log Out</string>
+
+</resources>
+
