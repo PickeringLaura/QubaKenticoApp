@@ -42,6 +42,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         Button button = (Button) findViewById(R.id.Login);
         button.setOnClickListener(this);
+        Button contact = (Button) findViewById(R.id.Contactus);
+        contact.setOnClickListener(this);
     }
 
     @Override
@@ -49,12 +51,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
-    }
-
-    private void doStuff(View view)
-    {
-        Intent next = new Intent(MainActivity.this, Dashboard.class);
-        startActivity(next);
     }
 
     @Override
@@ -85,6 +81,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         {
             goToDashboard();
         }
+        else if (isContactButton(view))
+        {
+            goToContact();
+        }
         else if (isExitButton(view))
         {
             System.exit(0);
@@ -94,7 +94,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private boolean isLoginButton(View view) {
         return view == findViewById(R.id.Login);
     }
-
+    private boolean isContactButton(View view) { return view == findViewById(R.id.Contactus);}
     private boolean isExitButton(View view)
     {
         return view == findViewById(R.id.LogOut);
@@ -103,6 +103,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private void goToDashboard() {
         Intent intent = new Intent(MainActivity.this, User_Dashboard.class);
         startActivity(intent);
+    }
+    private void goToContact(){
+        Intent next = new Intent(MainActivity.this, ContactUs.class);
+        startActivity(next);
     }
 
 }
