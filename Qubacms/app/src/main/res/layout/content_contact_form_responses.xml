@@ -8,4 +8,9 @@
     tools:context="com.shu.qubacms.qubacms.contactFormResponses"
     tools:showIn="@layout/activity_contact_form_responses">
 
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </GridLayout>
 </android.support.constraint.ConstraintLayout>

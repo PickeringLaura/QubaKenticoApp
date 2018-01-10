@@ -67,6 +67,9 @@
             android:id="@+id/Contactus"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="78dp"
             android:text="@string/button_name_main_Contact_us_Button"
             tools:layout_editor_absoluteX="137dp"
             tools:layout_editor_absoluteY="369dp" />
@@ -83,18 +86,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout">
-
-        <Button
-            android:id="@+id/Cancel"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentTop="true"
-            android:layout_column="3"
-            android:layout_row="6"
-            android:text="@string/button_name_main_Cancel_Button"
-            tools:layout_editor_absoluteX="207dp"
-            tools:layout_editor_absoluteY="0dp" />
 
         <Button
             android:id="@+id/Login"
