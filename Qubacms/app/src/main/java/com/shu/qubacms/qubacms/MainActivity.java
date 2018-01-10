@@ -31,7 +31,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                Snackbar.make(view, "Replace with your own action", S
+                nackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
         });
@@ -51,11 +52,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         return true;
     }
 
-    private void doStuff(View view)
-    {
-        Intent next = new Intent(MainActivity.this, Dashboard.class);
-        startActivity(next);
-    }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -85,19 +81,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         {
             goToDashboard();
         }
-        else if (isExitButton(view))
-        {
-            System.exit(0);
-        }
     }
 
     private boolean isLoginButton(View view) {
         return view == findViewById(R.id.Login);
-    }
-
-    private boolean isExitButton(View view)
-    {
-        return view == findViewById(R.id.LogOut);
     }
 
     private void goToDashboard() {

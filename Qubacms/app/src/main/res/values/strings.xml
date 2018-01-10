@@ -26,6 +26,8 @@
     <string name="button_name_contactformresponses">Contact Form Responses</string>
     <string name="button_name_additionalfunctions">Additional Functions</string>
     <string name="button_name_logout">Log Out</string>
+    <string name="title_activity_contact_form_responses">contactFormResponses</string>
+    <string name="title_activity_additional_functions">additionalFunctions</string>
 
 </resources>
 

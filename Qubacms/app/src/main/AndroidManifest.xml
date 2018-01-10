@@ -19,10 +19,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Dashboard" />
         <activity
             android:name=".User_Dashboard"
             android:label="@string/title_activity_user__dashboard"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".contactFormResponses"
+            android:label="@string/title_activity_contact_form_responses"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".additionalFunctions"
+            android:label="@string/title_activity_additional_functions"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
